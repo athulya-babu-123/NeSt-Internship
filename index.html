@@ -299,9 +299,15 @@
                 <p class="contact-intro">Have a project in mind? Let's collaborate and create something amazing together.</p>
             </div>
             <form class="contact-form" id="contactForm">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <label for="cf-name" class="contact-label">Your name</label>
+                <input id="cf-name" name="name" type="text" placeholder="Your Name" required>
+
+                <label for="cf-email" class="contact-label">Your email</label>
+                <input id="cf-email" name="email" type="email" placeholder="Your Email" required>
+
+                <label for="cf-message" class="contact-label">Your message</label>
+                <textarea id="cf-message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
             <p class="form-message" id="formMessage"></p>

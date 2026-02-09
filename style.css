@@ -1079,24 +1079,44 @@ p {
 .contact-form input,
 .contact-form textarea {
     padding: 14px;
-    border: 2px solid #e0e0e0;
+    border: 2px solid rgba(255,255,255,0.08);
     border-radius: 8px;
     font-family: inherit;
     font-size: 1rem;
+    color: var(--white);
+    -webkit-text-fill-color: var(--white);
+    caret-color: var(--white);
     transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-label {
+    display: block;
+    margin-bottom: 0.45rem;
+    color: rgba(255,255,255,0.95);
+    font-weight: 600;
+    font-size: 0.95rem;
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    color: #aaa;
+    color: rgba(255,255,255,0.6);
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
-    background-color: rgba(102, 126, 234, 0.02);
+    border-color: rgba(255,255,255,0.18);
+    box-shadow: 0 0 0 6px rgba(255,255,255,0.04);
+    background-color: rgba(255,255,255,0.03);
+}
+
+/* Fix browser autofill/text-fill visibility (Chrome/Safari) */
+input:-webkit-autofill, textarea:-webkit-autofill {
+    -webkit-text-fill-color: var(--white) !important;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px rgba(255,255,255,0.02) inset !important;
 }
 
 /* Section Header */
