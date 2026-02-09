@@ -1,0 +1,62 @@
+/* Brutalist theme with kinetic typography */
+:root{
+  --bg:#f3f3f3;
+  --paper:#ffffff;
+  --ink:#0b0b0b;
+  --accent:#00ff99; /* neon accent */
+  --accent2:#ff2d95;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,Segoe UI,Roboto,monospace}
+.top{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;border-bottom:6px solid var(--ink);background:linear-gradient(90deg,#fff 0%,#eee 100%)}
+.brand{font-weight:800;font-family:monospace;letter-spacing:4px;font-size:18px}
+.nav a{margin-left:16px;text-decoration:none;color:var(--ink);font-weight:700;border:3px solid transparent;padding:6px 10px}
+.nav a:hover{border-color:var(--accent);transform:translateY(-2px)}
+
+.hero{min-height:70vh;display:flex;align-items:center;justify-content:center;border-bottom:8px solid var(--ink);background:repeating-linear-gradient(45deg,rgba(0,0,0,0.03) 0 6px, transparent 6px 12px)}
+.hero-inner{text-align:center}
+.kinetic{font-family:monospace;font-size:clamp(48px,9vw,120px);margin:0;line-height:0.9;letter-spacing:2px;font-weight:900;text-transform:uppercase}
+.strap{margin-top:10px;font-weight:800;letter-spacing:2px}
+
+/* kinetic letter treatment */
+#kt-words{display:inline-block;padding:6px 10px;border:6px solid var(--ink);background:var(--paper);color:var(--ink)}
+
+.btn{display:inline-block;padding:12px 18px;margin:12px;border:6px solid var(--ink);text-decoration:none;font-weight:800}
+.btn.primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn.ghost{background:transparent;color:var(--ink)}
+
+.work{padding:64px 6vw}
+.work h2{font-size:28px;margin:0 0 18px;border-bottom:4px solid var(--ink);display:inline-block;padding-bottom:6px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:18px}
+.card{background:var(--paper);padding:28px;border:8px solid var(--ink);font-weight:800;text-align:center}
+
+.about{padding:64px 6vw;border-top:8px solid var(--ink);background:linear-gradient(180deg,transparent,rgba(0,0,0,0.02))}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.lead{font-weight:700;font-size:18px}
+.footer{padding:30px 6vw;text-align:center;border-top:6px solid var(--ink);font-weight:700}
+
+/* Kinetic animations */
+@keyframes pulseIn{
+  0%{transform:translateY(0) scale(1);filter:blur(0)}
+  30%{transform:translateY(-10px) scale(1.04);filter:blur(.6px)}
+  60%{transform:translateY(8px) scale(.98);filter:blur(0)}
+  100%{transform:translateY(0) scale(1);filter:blur(0)}
+}
+
+@keyframes glowAccent{
+  0%{box-shadow:0 0 0px rgba(0,255,153,0)}
+  50%{box-shadow:0 6px 40px rgba(0,255,153,0.12)}
+  100%{box-shadow:0 0 0px rgba(0,255,153,0)}
+}
+
+/* small screens */
+@media (max-width:900px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .about-grid{grid-template-columns:1fr}
+}
+
+@media (max-width:520px){
+  .grid{grid-template-columns:1fr}
+  .nav{display:none}
+  #kt-words{padding:4px 8px;border-width:4px}
+}

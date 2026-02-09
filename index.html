@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athulya - Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Side panels: left label and right quick links -->
+    <div class="side-panels">
+        <div class="panel-left">My Portfolio</div>
+        <div class="panel-right">
+            <a href="#projects" class="panel-link">Projects</a>
+            <a href="#contact" class="panel-link">Contact</a>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-inner">
+            <div class="hero-left">
+                <h1>Hi, I'm <span class="typing">Athulya</span></h1>
+                <p class="hero-subtitle">Creating beautiful and functional websites</p>
+                <div style="margin-top:1.25rem;"><button class="cta-btn">Get Started</button></div>
+            </div>
+
+            <div class="hero-right">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Work illustration">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-background"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="header-underline"></div>
+            </div>
+
+            <p class="about-intro">I'm a passionate full-stack developer with a love for creating beautiful, functional, and user-centric digital solutions. I enjoy turning complex problems into elegant, user-friendly products.</p>
+
+            <div class="about-grid">
+                <div class="about-left">
+                    <div class="about-photo">
+                        <img src="profile.jpg" alt="Athulya">
+                    </div>
+                    <div class="bio">
+                        <h3>Hello</h3>
+                        <p>I build responsive web applications using modern HTML, CSS and JavaScript. I also work with frameworks and backend tools to deliver full-stack solutions.</p>
+                    </div>
+
+                    <div class="contact-info">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><strong>Email:</strong> athulya@example.com</li>
+                            <li><strong>Location:</strong> Kochi, India</li>
+                            <li><strong>Phone:</strong> +91 98765 43210</li>
+                        </ul>
+                        <div class="social-compact">
+                            <a href="#">GitHub</a>
+                            <a href="#">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-right">
+                    <h3>Experience & Timeline</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">2023 - Present</div>
+                            <div class="timeline-body">
+                                <h4>Frontend Developer</h4>
+                                <p>Working on performant, accessible user interfaces and design systems.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2021 - 2023</div>
+                            <div class="timeline-body">
+                                <h4>Full-Stack Intern</h4>
+                                <p>Built small web apps, APIs and collaborated on deployments.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2019 - 2021</div>
+                            <div class="timeline-body">
+                                <h4>Freelance Projects</h4>
+                                <p>Delivered websites for small businesses and personal portfolios.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 style="margin-top:1.5rem;">Education</h4>
+                    <p>B.Sc. in Computer Science — [Your University], 2019</p>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="stats-container">
+                <div class="stat-box">
+                    <div class="stat-icon">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=200&q=80" alt="Projects">
+                    </div>
+                    <div class="stat-number" data-target="50">0</div>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=200&q=80" alt="Clients">
+                    </div>
+                    <div class="stat-number" data-target="100">0</div>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=200&q=80" alt="Experience">
+                    </div>
+                    <div class="stat-number" data-target="5">0</div>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+
+            <h3 style="text-align: center; margin-top: 4rem; margin-bottom: 2rem; color: var(--primary-color);">My Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-image" style="background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80');"></div>
+                    <div class="skill-content">
+                        <h4>HTML & CSS</h4>
+                        <p>Building responsive, accessible layouts with semantic markup.</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-image" style="background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80');"></div>
+                    <div class="skill-content">
+                        <h4>JavaScript</h4>
+                        <p>Interactive experiences, animations, and SPA behaviours.</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-image" style="background-image: url('https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1200&q=80');"></div>
+                    <div class="skill-content">
+                        <h4>Design</h4>
+                        <p>User-centric visual design, prototyping and UX patterns.</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="projects-background"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2>Selected Projects</h2>
+                <div class="header-underline"></div>
+            </div>
+            <div class="project-grid">
+                <div class="project-card" data-project="1">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1500&q=80');"></div>
+                    <div class="project-overlay">
+                        <h4>View Details</h4>
+                    </div>
+                    <h3>Project 1</h3>
+                    <p>A responsive website built with HTML and CSS</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                    <a href="#" class="project-link" data-modal="1">View Project →</a>
+                </div>
+                <div class="project-card" data-project="2">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1500&q=80');"></div>
+                    <div class="project-overlay">
+                        <h4>View Details</h4>
+                    </div>
+                    <h3>Project 2</h3>
+                    <p>Interactive web application with JavaScript</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">API</span>
+                    </div>
+                    <a href="#" class="project-link" data-modal="2">View Project →</a>
+                </div>
+                <div class="project-card" data-project="3">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1500&q=80');"></div>
+                    <div class="project-overlay">
+                        <h4>View Details</h4>
+                    </div>
+                    <h3>Project 3</h3>
+                    <p>E-commerce website with dynamic features</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                    </div>
+                    <a href="#" class="project-link" data-modal="3">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <div class="project-modal" id="modal-1">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2>Project 1 - Responsive Website</h2>
+            <div class="modal-image"></div>
+            <p>This is a fully responsive website built with modern HTML and CSS techniques. It features a mobile-first design approach, ensuring optimal viewing on all devices.</p>
+            <h4>Technologies:</h4>
+            <p>HTML5, CSS3, Responsive Design</p>
+            <h4>Features:</h4>
+            <ul>
+                <li>Mobile-first responsive design</li>
+                <li>Cross-browser compatibility</li>
+                <li>SEO optimized</li>
+            </ul>
+            <a href="#" class="demo-link">Live Demo</a>
+        </div>
+    </div>
+
+    <div class="project-modal" id="modal-2">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2>Project 2 - Interactive Web App</h2>
+            <div class="modal-image"></div>
+            <p>A dynamic web application with interactive features powered by JavaScript. Real-time data updates and smooth animations create an engaging user experience.</p>
+            <h4>Technologies:</h4>
+            <p>JavaScript, DOM Manipulation, APIs</p>
+            <h4>Features:</h4>
+            <ul>
+                <li>Real-time data updates</li>
+                <li>Smooth animations</li>
+                <li>Interactive UI elements</li>
+            </ul>
+            <a href="#" class="demo-link">Live Demo</a>
+        </div>
+    </div>
+
+    <div class="project-modal" id="modal-3">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2>Project 3 - E-Commerce Platform</h2>
+            <div class="modal-image"></div>
+            <p>A complete e-commerce solution with product catalog, shopping cart, and payment integration. Built with modern web technologies for scalability and performance.</p>
+            <h4>Technologies:</h4>
+            <p>React, Node.js, MongoDB, Stripe</p>
+            <h4>Features:</h4>
+            <ul>
+                <li>Product catalog with search</li>
+                <li>Shopping cart functionality</li>
+                <li>Secure payment processing</li>
+            </ul>
+            <a href="#" class="demo-link">Live Demo</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-background"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="header-underline"></div>
+                <p class="contact-intro">Have a project in mind? Let's collaborate and create something amazing together.</p>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <p class="form-message" id="formMessage"></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
