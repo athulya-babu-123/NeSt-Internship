@@ -1084,10 +1084,12 @@ p {
     font-family: inherit;
     font-size: 1rem;
     color: var(--white);
-    -webkit-text-fill-color: var(--white);
+    -webkit-text-fill-color: var(--white) !important;
     caret-color: var(--white);
+    background-color: rgba(255,255,255,0.02);
     transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
+
 
 .contact-label {
     display: block;
@@ -1108,6 +1110,22 @@ p {
     border-color: rgba(255,255,255,0.18);
     box-shadow: 0 0 0 6px rgba(255,255,255,0.04);
     background-color: rgba(255,255,255,0.03);
+}
+
+/* Ensure text remains visible after blur/enter and when browser applies autofill styles */
+.contact-form input,
+.contact-form textarea,
+.contact-form input:focus,
+.contact-form textarea:focus {
+    color: var(--white) !important;
+    -webkit-text-fill-color: var(--white) !important;
+}
+
+/* Selection inside inputs/textareas should remain readable */
+.contact-form input::selection,
+.contact-form textarea::selection {
+    background: rgba(233,69,96,0.18);
+    color: var(--white);
 }
 
 /* Fix browser autofill/text-fill visibility (Chrome/Safari) */
